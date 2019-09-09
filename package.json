@@ -1,0 +1,39 @@
+{
+    "name": "semsort",
+    "description": "Semantic versioning sort algroithm",
+    "version": "0.0.1",
+    "main": "dist/index.js",
+    "author": "Jarvis Prestidge",
+    "license": "MIT",
+    "bugs": {
+        "url": "http://github.com/jarvisprestidge/semsort/issues"
+    },
+    "repository": {
+        "url": "git://github.com/jarvisprestidge/semsort.git"
+    },
+    "keywords": [
+        "typescript",
+        "zero dependencies"
+    ],
+    "scripts": {
+        "build": "npm run clean && tsc -p .",
+        "clean": "rm -rf dist",
+        "prepublishOnly": "yarn build",
+        "run-example": "ts-node examples/example.ts"
+    },
+    "files": [
+        "dist",
+        "package.json",
+        "yarn.lock",
+        "README.md",
+        "LICENSE.txt"
+    ],
+    "dependencies": {},
+    "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^2.1.0",
+        "@typescript-eslint/parser": "^2.1.0",
+        "eslint": "^6.3.0",
+        "ts-node": "^8.3.0",
+        "typescript": "^3.6.2"
+    }
+}
